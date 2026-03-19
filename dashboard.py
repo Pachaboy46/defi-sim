@@ -29,7 +29,7 @@ st.set_page_config(
 #  Data Loader
 # ─────────────────────────────────────────────
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=300)
 def load_data() -> dict:
     if not LOG_FILE.exists():
         return {}
