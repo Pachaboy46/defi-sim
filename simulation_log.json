@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "started_at": null,
+    "starting_balance": 10000.00,
+    "current_balance": 10000.00,
+    "current_pool_id": null,
+    "current_pool_name": null,
+    "current_apy": null,
+    "last_move_date": null,
+    "total_simulated_gas_spent": 0.0,
+    "total_moves": 0,
+    "days_elapsed": 0,
+    "is_complete": false
+  },
+  "daily_log": [],
+  "benchmark_passive": {
+    "balance": 10000.00,
+    "last_apy": 0
+  },
+  "benchmark_coinbase": {
+    "balance": 10000.00,
+    "fixed_apy": 10.3
+  }
+}

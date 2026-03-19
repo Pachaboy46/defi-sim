@@ -1,0 +1,38 @@
+name: Daily Simulation Run
+
+on:
+  schedule:
+    - cron: '0 8 * * *'    # 08:00 UTC every day
+  workflow_dispatch:        # Allow manual trigger from Actions tab
+
+permissions:
+  contents: write           # Required to commit simulation_log.json back to repo
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run simulation
+        run: python simulate.py
+
+      - name: Commit updated log
+        run: |
+          git config user.name  "defi-sim-bot"
+          git config user.email "bot@defi-sim.local"
+          git add simulation_log.json
+          git diff --staged --quiet || git commit -m "Daily simulation update $(date -u +%Y-%m-%d)"
+          git push
