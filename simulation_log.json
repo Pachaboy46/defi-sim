@@ -2,14 +2,14 @@
   "meta": {
     "started_at": "2026-03-19",
     "starting_balance": 10000.0,
-    "current_balance": 10019.288026,
+    "current_balance": 10020.308923,
     "current_pool_id": "7820bd3c-461a-4811-9f0b-1d39c1503c3f",
     "current_pool_name": "Morpho StEakUSDC",
-    "current_apy": 3.7034,
+    "current_apy": 3.7191,
     "last_move_date": null,
     "total_simulated_gas_spent": 0.0,
     "total_moves": 0,
-    "days_elapsed": 18,
+    "days_elapsed": 19,
     "is_complete": false
   },
   "daily_log": [
@@ -858,14 +858,61 @@
           "tvlUsd": 89271676
         }
       ]
+    },
+    {
+      "date": "2026-04-06",
+      "day": 19,
+      "balance": 10020.308923,
+      "pool_id": "7820bd3c-461a-4811-9f0b-1d39c1503c3f",
+      "pool_name": "Morpho StEakUSDC",
+      "apy": 3.7191,
+      "daily_yield": 1.020897,
+      "gas_deducted": 0.0,
+      "moved": false,
+      "decision_reason": "Improvement 1.01pp below threshold 1.5pp",
+      "api_available": true,
+      "benchmark_passive": 10020.308923,
+      "benchmark_coinbase": 10053.752829,
+      "pool_snapshot": [
+        {
+          "id": "7820bd3c-461a-4811-9f0b-1d39c1503c3f",
+          "name": "Morpho StEakUSDC",
+          "apy": 3.7191,
+          "tvlUsd": 466276490
+        },
+        {
+          "id": "c043062f-fcd6-47aa-b063-70691dc25c1c",
+          "name": "Gauntlet GTUSDA",
+          "apy": 4.141,
+          "tvlUsd": 76862218
+        },
+        {
+          "id": "305edf0e-a304-42db-b2f1-7a427841bc80",
+          "name": "Morpho GTUSDCF",
+          "apy": 4.6066,
+          "tvlUsd": 488858
+        },
+        {
+          "id": "bf346d43-ef94-4277-b159-ebadb93caef1",
+          "name": "Morpho BBQUSDC",
+          "apy": 4.7326,
+          "tvlUsd": 19033693
+        },
+        {
+          "id": "7e0661bf-8cf3-45e6-9424-31916d4c7b84",
+          "name": "Aave v3 USDC",
+          "apy": 2.6033,
+          "tvlUsd": 88444808
+        }
+      ]
     }
   ],
   "benchmark_passive": {
-    "balance": 10019.288026,
-    "last_apy": 3.7034
+    "balance": 10020.308923,
+    "last_apy": 3.7191
   },
   "benchmark_coinbase": {
-    "balance": 10050.916543,
+    "balance": 10053.752829,
     "fixed_apy": 10.3
   }
 }
